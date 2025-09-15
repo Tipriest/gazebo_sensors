@@ -19,7 +19,7 @@
       </inertial>
       <visual>
         <geometry>
-          <mesh filename="package://hexapod_elevation_mapping/model/sensors/RS-BPearl/meshes/BPearl.STL" />
+          <mesh filename="package://gazebo_sensors/lidars/RS-BPearl/meshes/BPearl.STL" />
         </geometry>
         <origin rpy="0 -1.5708 0" xyz="0 0 0"/>
       </visual>
