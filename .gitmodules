@@ -1,3 +1,6 @@
 [submodule "third_party/rslidar_sdk"]
 	path = third_party/rslidar_sdk
 	url = git@github.com:RoboSense-LiDAR/rslidar_sdk.git
+[submodule "third_party/velodyne_simulator"]
+	path = third_party/velodyne_simulator
+	url = git@github.com:Tipriest/velodyne_simulator.git
