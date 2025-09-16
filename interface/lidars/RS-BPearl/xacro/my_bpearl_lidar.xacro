@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="my_bpearl_demo">
+
+
+    <link name="base">
+        <visual>
+            <origin rpy="0 0 0" xyz="0 0 0"/>
+            <geometry>
+                <box size="0.20 0.20 1.0"/>
+            </geometry>
+        </visual>
+    </link>
+    
+    <xacro:arg name="gpu" default="false"/>
+    <xacro:property name="gpu" value="$(arg gpu)" />
+    <xacro:property name="lidar_frame_name" value="BPearl_Lidar"/>
+    <xacro:arg name="organize_cloud" default="false"/>
+    <xacro:property name="organize_cloud" value="$(arg organize_cloud)" />
+    <xacro:include filename="$(find gazebo_sensors)/lidars/RS-BPearl/xacro/RS-BPearl.xacro"/>
+    <xacro:RS-BPearl parent="base" name="${lidar_frame_name}" topic="/bpearl_points" organize_cloud="${organize_cloud}" hz="15" samples="1000" gpu="${gpu}">
+        <origin xyz="-0.20 0.20 0.15" rpy="0 1.5708 0" />
+    </xacro:RS-BPearl>
+</robot>

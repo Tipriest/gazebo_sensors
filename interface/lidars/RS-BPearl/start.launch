@@ -1,4 +1,5 @@
 <launch>
+
   <node pkg="rslidar_sdk" name="rslidar_sdk_node" type="rslidar_sdk_node" output="screen">
     <param name="config_path" value="$(find gazebo_sensors)/lidars/RS-BPearl/config.yaml"/>
   </node>
