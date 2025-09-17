@@ -1,0 +1,16 @@
+<launch>
+  <!-- rviz -->
+  <node pkg="rviz" name="rviz" type="rviz" args="-d $(find gazebo_sensors)/lidars/VLP-16/rviz/rviz.rviz" />
+
+  <arg name="module_name" default="HexPercept1" />
+
+  <include file="$(find gazebo_ros)/launch/empty_world.launch" />
+  <param name="robot_description"
+    command="$(find xacro)/xacro '$(find gazebo_sensors)/lidars/VLP-16/xacro/my_vlp16.xacro'"/>
+  <node
+    name="spawn_model" pkg="gazebo_ros" type="spawn_model"
+    args="-urdf -param robot_description -model $(arg module_name) -x 0 -y 0 -z 0.1 -R 0 -P 0 -Y 0"
+    output="screen" 
+  />
+    
+</launch>
