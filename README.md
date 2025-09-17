@@ -15,7 +15,7 @@
 | RoboSense    | RS-LiDAR-32          | ⬜         | 32线/360°     |                |
 | Ouster       | OS1-64               | ⬜         | 64线/360°     |                |
 | Livox        | Mid-40               | ⬜         | 非线性/38.4°  | 特殊扫描方式   |
-| BP           | BP-LiDAR             | ✅         | 16线/360°     | 来源masterYip  |
+| BP           | BP-LiDAR             | ✅         | 16线/360°     |             |
 
 ✅ 已包含  ⬜ 未包含
 
