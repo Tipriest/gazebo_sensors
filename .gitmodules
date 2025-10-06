@@ -4,3 +4,6 @@
 [submodule "third_party/velodyne_simulator"]
 	path = third_party/velodyne_simulator
 	url = git@github.com:Tipriest/velodyne_simulator.git
+[submodule "third_party/livox_ros_driver"]
+	path = third_party/livox_ros_driver
+	url = git@github.com:Tipriest/livox_ros_driver.git
